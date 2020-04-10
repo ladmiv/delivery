@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PizzaBurger - доставка еды на дом</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <a href="index.html">
+        <img src="img/logo.svg" alt="Логотип">
+      </a>
+
+      <input type="text" class="input input-address" placeholder="Адрес доставки">
+
+      <div class="buttons">
+        <button class="button button-primary buttons__button-primary">
+          <svg class="button-icon" width="12" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.415 10.931a5.845 5.845 0 00-1.26-1.867 5.87 5.87 0 00-1.867-1.26l-.019-.007a3.874 3.874 0 10-4.537.002l-.02.007c-.7.296-1.327.719-1.866 1.26a5.87 5.87 0 00-1.72 4.025.125.125 0 00.124.128h.938a.125.125 0 00.125-.122 4.658 4.658 0 011.372-3.192A4.657 4.657 0 016 8.53c1.254 0 2.43.488 3.316 1.374a4.658 4.658 0 011.372 3.192.124.124 0 00.125.122h.937a.125.125 0 00.125-.128 5.823 5.823 0 00-.46-2.16zM6 7.344a2.67 2.67 0 01-1.9-.788 2.67 2.67 0 01-.787-1.9c0-.717.28-1.392.787-1.9A2.67 2.67 0 016 1.97c.718 0 1.393.28 1.9.787a2.67 2.67 0 01.788 1.9 2.67 2.67 0 01-.788 1.9 2.67 2.67 0 01-1.9.788z" fill="#fff"/></svg>
+
+          <span class="button-text">Войти</span>
+        </button>
+
+        <button class="button" id="cart-button">
+          <svg class="button-icon" width="15" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.42 8.967H5.115l.468-.951 7.762-.014a.543.543 0 00.534-.447l1.075-6.017a.542.542 0 00-.532-.64L4.547.866 4.462.469a.555.555 0 00-.54-.438H1.508a.552.552 0 100 1.103h1.967l.368 1.754.908 4.395L3.583 9.19a.546.546 0 00-.047.575.55.55 0 00.492.303h.981a1.604 1.604 0 001.281 2.567 1.604 1.604 0 001.282-2.567h2.517a1.604 1.604 0 001.281 2.567 1.604 1.604 0 001.281-2.567h1.77a.553.553 0 00.552-.552.554.554 0 00-.553-.55zM4.776 1.953l8.997.03-.881 4.934-7.067.013-1.049-4.977zm1.514 9.574a.495.495 0 010-.988.495.495 0 010 .988zm5.08 0a.495.495 0 010-.988.495.495 0 010 .988z" fill="#8C8C8C"/></svg>
+
+          <span class="button-text">Корзина</span>
+        </button>
+      </div>
+    </header>
+  </div>
+
+  <main class="main">
+    <div class="container">
+
+    <section class="restaurants">
+      <div class="section-heading restaurants__section-heading">
+        <h2 class="section-title">PizzaBurger</h2>
+
+        <div class="card-info">
+          <div class="rating card-info__rating">
+            <img src="img/cards/star.svg" alt="Star" class="rating-star">
+            4.5
+          </div>
+
+          <div class="price card-info__price">От 900 ₽</div>
+
+          <div class="category">Пицца</div>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="card cards__card wow fadeInUp">
+          <div class="card-content">
+            <img src="img/restaurant/image1.jpg" alt="Ролл угорь стандарт" class="card-image">
+
+            <div class="card-text">
+              <div class="card-heading">
+                <h3 class="card-title card-title-reg">Ролл угорь стандарт</h3>
+              </div>
+
+              <div class="card-info card-info-rest">
+                <div class="ingredients">Рис, угорь, соус унаги, кунжут, водоросли нори.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-buttons">
+            <button class="button button-primary">
+              <span class="button-card-text">В корзину</span>
+
+              <svg class="button-card-img" width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.42 9.73H5.115l.468-.951 7.762-.014a.543.543 0 00.534-.447L14.954 2.3a.543.543 0 00-.532-.639L4.547 1.63l-.085-.397a.555.555 0 00-.54-.438H1.508a.552.552 0 100 1.103h1.967l.369 1.754.907 4.395-1.168 1.908a.546.546 0 00-.047.575.55.55 0 00.492.303h.981a1.604 1.604 0 001.281 2.567 1.604 1.604 0 001.282-2.567h2.517a1.604 1.604 0 102.884.964c0-.349-.115-.688-.322-.964h1.77a.552.552 0 00.552-.552.553.553 0 00-.553-.55zM4.776 2.716l8.997.03-.881 4.934-7.067.013-1.049-4.977zM6.29 12.29a.495.495 0 010-.988.495.495 0 010 .988zm5.08 0a.495.495 0 010-.988.495.495 0 010 .988z" fill="#fff"/></svg>
+            </button>
+
+            <strong class="card-price-bold">250 ₽</strong>
+          </div>
+        </div>
+
+        <div class="card cards__card wow fadeInUp" data-wow-delay="0.2s">
+          <div class="card-content">
+            <img src="img/restaurant/image2.jpg" alt="Калифорния лосось стандарт" class="card-image">
+
+             <div class="card-text">
+              <div class="card-heading">
+                <h3 class="card-title card-title-reg">Калифорния лосось стандарт</h3>
+              </div>
+
+              <div class="card-info card-info-rest">
+                <div class="ingredients">Рис, лосось, авокадо, огурец, майонез, икра масаго, водоросли нори.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-buttons">
+            <button class="button button-primary">
+              <span class="button-card-text">В корзину</span>
+
+              <svg class="button-card-img" width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.42 9.73H5.115l.468-.951 7.762-.014a.543.543 0 00.534-.447L14.954 2.3a.543.543 0 00-.532-.639L4.547 1.63l-.085-.397a.555.555 0 00-.54-.438H1.508a.552.552 0 100 1.103h1.967l.369 1.754.907 4.395-1.168 1.908a.546.546 0 00-.047.575.55.55 0 00.492.303h.981a1.604 1.604 0 001.281 2.567 1.604 1.604 0 001.282-2.567h2.517a1.604 1.604 0 102.884.964c0-.349-.115-.688-.322-.964h1.77a.552.552 0 00.552-.552.553.553 0 00-.553-.55zM4.776 2.716l8.997.03-.881 4.934-7.067.013-1.049-4.977zM6.29 12.29a.495.495 0 010-.988.495.495 0 010 .988zm5.08 0a.495.495 0 010-.988.495.495 0 010 .988z" fill="#fff"/></svg>
+            </button>
+
+            <strong class="card-price-bold">250 ₽</strong>
+          </div>
+        </div>
+
+        <div class="card cards__card wow fadeInUp" data-wow-delay="0.4s">
+          <div class="card-content">
+            <img src="img/restaurant/image3.jpg" alt="Окинава стандарт" class="card-image">
+
+             <div class="card-text">
+              <div class="card-heading">
+                <h3 class="card-title card-title-reg">Окинава стандарт</h3>
+              </div>
+
+              <div class="card-info card-info-rest">
+                <div class="ingredients"> Рис, креветка отварная, сыр сливочный, лосось, огурец свежий...</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-buttons">
+            <button class="button button-primary">
+              <span class="button-card-text">В корзину</span>
+
+              <svg class="button-card-img" width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.42 9.73H5.115l.468-.951 7.762-.014a.543.543 0 00.534-.447L14.954 2.3a.543.543 0 00-.532-.639L4.547 1.63l-.085-.397a.555.555 0 00-.54-.438H1.508a.552.552 0 100 1.103h1.967l.369 1.754.907 4.395-1.168 1.908a.546.546 0 00-.047.575.55.55 0 00.492.303h.981a1.604 1.604 0 001.281 2.567 1.604 1.604 0 001.282-2.567h2.517a1.604 1.604 0 102.884.964c0-.349-.115-.688-.322-.964h1.77a.552.552 0 00.552-.552.553.553 0 00-.553-.55zM4.776 2.716l8.997.03-.881 4.934-7.067.013-1.049-4.977zM6.29 12.29a.495.495 0 010-.988.495.495 0 010 .988zm5.08 0a.495.495 0 010-.988.495.495 0 010 .988z" fill="#fff"/></svg>
+            </button>
+
+            <strong class="card-price-bold">250 ₽</strong>
+          </div>
+        </div>
+
+        <div class="card cards__card wow fadeInUp">
+          <div class="card-content">
+            <img src="img/restaurant/image4.jpg" alt="Цезарь маки хl" class="card-image">
+
+             <div class="card-text">
+              <div class="card-heading">
+                <h3 class="card-title card-title-reg">Цезарь маки хl</h3>
+              </div>
+
+              <div class="card-info card-info-rest">
+                <div class="ingredients">Рис, куриная грудка копченая, икра масаго, томат, айсберг, соус цезарь...</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-buttons">
+            <button class="button button-primary">
+              <span class="button-card-text">В корзину</span>
+
+              <svg class="button-card-img" width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.42 9.73H5.115l.468-.951 7.762-.014a.543.543 0 00.534-.447L14.954 2.3a.543.543 0 00-.532-.639L4.547 1.63l-.085-.397a.555.555 0 00-.54-.438H1.508a.552.552 0 100 1.103h1.967l.369 1.754.907 4.395-1.168 1.908a.546.546 0 00-.047.575.55.55 0 00.492.303h.981a1.604 1.604 0 001.281 2.567 1.604 1.604 0 001.282-2.567h2.517a1.604 1.604 0 102.884.964c0-.349-.115-.688-.322-.964h1.77a.552.552 0 00.552-.552.553.553 0 00-.553-.55zM4.776 2.716l8.997.03-.881 4.934-7.067.013-1.049-4.977zM6.29 12.29a.495.495 0 010-.988.495.495 0 010 .988zm5.08 0a.495.495 0 010-.988.495.495 0 010 .988z" fill="#fff"/></svg>
+            </button>
+
+            <strong class="card-price-bold">250 ₽</strong>
+          </div>
+        </div>
+
+        <div class="card cards__card wow fadeInUp" data-wow-delay="0.2s">
+          <div class="card-content">
+            <img src="img/restaurant/image5.jpg" alt="Ясай маки стандарт 185 г" class="card-image">
+
+             <div class="card-text">
+              <div class="card-heading">
+                <h3 class="card-title card-title-reg">Ясай маки стандарт 185 г</h3>
+              </div>
+
+              <div class="card-info card-info-rest">
+                <div class="ingredients">Рис, помидор свежий, перец болгарский, авокадо, огурец, айсберг</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-buttons">
+            <button class="button button-primary">
+              <span class="button-card-text">В корзину</span>
+
+              <svg class="button-card-img" width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.42 9.73H5.115l.468-.951 7.762-.014a.543.543 0 00.534-.447L14.954 2.3a.543.543 0 00-.532-.639L4.547 1.63l-.085-.397a.555.555 0 00-.54-.438H1.508a.552.552 0 100 1.103h1.967l.369 1.754.907 4.395-1.168 1.908a.546.546 0 00-.047.575.55.55 0 00.492.303h.981a1.604 1.604 0 001.281 2.567 1.604 1.604 0 001.282-2.567h2.517a1.604 1.604 0 102.884.964c0-.349-.115-.688-.322-.964h1.77a.552.552 0 00.552-.552.553.553 0 00-.553-.55zM4.776 2.716l8.997.03-.881 4.934-7.067.013-1.049-4.977zM6.29 12.29a.495.495 0 010-.988.495.495 0 010 .988zm5.08 0a.495.495 0 010-.988.495.495 0 010 .988z" fill="#fff"/></svg>
+            </button>
+
+            <strong class="card-price-bold">250 ₽</strong>
+          </div>
+        </div>
+
+        <div class="card cards__card wow fadeInUp" data-wow-delay="0.4s">
+          <div class="card-content">
+            <img src="img/restaurant/image6.jpg" alt="Ролл с креветкой стандарт" class="card-image">
+
+             <div class="card-text">
+              <div class="card-heading">
+                <h3 class="card-title card-title-reg">Ролл с креветкой стандарт</h3>
+              </div>
+
+              <div class="card-info card-info-rest">
+                <div class="ingredients">Рис, водоросли нори, креветки отварные, сыр сливочный, огурцы</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-buttons">
+            <button class="button button-primary">
+              <span class="button-card-text">В корзину</span>
+
+              <svg class="button-card-img" width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.42 9.73H5.115l.468-.951 7.762-.014a.543.543 0 00.534-.447L14.954 2.3a.543.543 0 00-.532-.639L4.547 1.63l-.085-.397a.555.555 0 00-.54-.438H1.508a.552.552 0 100 1.103h1.967l.369 1.754.907 4.395-1.168 1.908a.546.546 0 00-.047.575.55.55 0 00.492.303h.981a1.604 1.604 0 001.281 2.567 1.604 1.604 0 001.282-2.567h2.517a1.604 1.604 0 102.884.964c0-.349-.115-.688-.322-.964h1.77a.552.552 0 00.552-.552.553.553 0 00-.553-.55zM4.776 2.716l8.997.03-.881 4.934-7.067.013-1.049-4.977zM6.29 12.29a.495.495 0 010-.988.495.495 0 010 .988zm5.08 0a.495.495 0 010-.988.495.495 0 010 .988z" fill="#fff"/></svg>
+            </button>
+
+            <strong class="card-price-bold">250 ₽</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-block">
+        <img src="img/logo.svg" alt="Логотип" class="logo footer-logo">
+
+        <nav class="footer-nav">
+          <a href="#" class="footer-link">Ресторанам</a>
+          <a href="#" class="footer-link">Курьерам</a>
+          <a href="#" class="footer-link">Пресс-центр</a>
+          <a href="#" class="footer-link">Контакты</a>
+        </nav>
+
+        <div class="social-links">
+          <a href="#" class="social-link">
+            <img src="img/footer/inst.svg" alt="Instagram">
+          </a>
+          <a href="#" class="social-link">
+            <img src="img/footer/fb.svg" alt="Facebook">
+          </a>
+          <a href="#" class="social-link">
+            <img src="img/footer/vk.svg" alt="Vk">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title">Корзина</h3>
+
+        <button class="close">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="food-row">
+          <span class="food-name">Ролл угорь стандарт</span>
+
+          <strong class="food-price">250 ₽</strong>
+
+          <div class="food-counter">
+            <button class="counter-button">-</button>
+
+            <span class="counter">1</span>
+
+            <button class="counter-button">+</button>
+          </div>
+        </div>
+
+        <div class="food-row">
+          <span class="food-name">Ролл угорь стандарт</span>
+
+          <strong class="food-price">250 ₽</strong>
+
+          <div class="food-counter">
+            <button class="counter-button">-</button>
+
+            <span class="counter">1</span>
+
+            <button class="counter-button">+</button>
+          </div>
+        </div>
+
+        <div class="food-row">
+          <span class="food-name">Ролл угорь стандарт</span>
+
+          <strong class="food-price">250 ₽</strong>
+
+          <div class="food-counter">
+            <button class="counter-button">-</button>
+
+            <span class="counter">1</span>
+
+            <button class="counter-button">+</button>
+          </div>
+        </div>
+
+        <div class="food-row">
+          <span class="food-name">Ролл угорь стандарт</span>
+
+          <strong class="food-price">250 ₽</strong>
+
+          <div class="food-counter">
+            <button class="counter-button">-</button>
+
+            <span class="counter">1</span>
+
+            <button class="counter-button">+</button>
+          </div>
+        </div>
+
+        <div class="food-row">
+          <span class="food-name">Ролл угорь стандарт</span>
+
+          <strong class="food-price">250 ₽</strong>
+
+          <div class="food-counter">
+            <button class="counter-button">-</button>
+
+            <span class="counter">1</span>
+
+            <button class="counter-button">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <span class="modal-pricetag">1250 ₽</span>
+
+        <div class="footer-buttons">
+          <button class="button button-primary">Оформить заказ</button>
+
+          <button class="button">Отмена</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/wow.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
